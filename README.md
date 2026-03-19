@@ -19,3 +19,25 @@ Automatically investigates incoming chargebacks, scores fraud likelihood using a
 - Optional: Streamlit dashboard for monitoring & manual review queue
 
 Status: starter implementation + demo flow — ready to connect real POS & payment data
+
+```text
+
+restaurant-fraud-investigator-agent/
+├── README.md
+├── requirements.txt
+├── .env.example
+├── config.py
+├── main.py
+├── models/
+│   └── lbsf_model.py
+├── agents/
+│   └── fraud_investigator_agent.py
+├── tools/
+│   ├── payment_integrations.py
+│   ├── evidence_generator.py
+│   └── dispute_submitter.py
+├── utils.py
+├── data/
+│   └── sample_transactions.csv
+└── dashboard/
+    └── app.py
